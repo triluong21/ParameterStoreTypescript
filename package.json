@@ -1,0 +1,37 @@
+{
+  "name": "ParameterStoreTypescript",
+  "version": "1.0.0",
+  "description": "Stand up Parameter Store Secret and Lambda to retrieve Secret",
+  "main": "index.ts",
+  "typings": "index.ts",
+  "author": "Tri Luong",
+  "license": "MIT",
+  "scripts": {
+    "sls": "node_modules/.bin/sls",
+    "test": "node_modules/.bin/mocha \"./{,!(node_modules)/**/}*.spec.ts\" -t 10000 --require ts-node/register --require mocha.env --require tsconfig-paths/register --reporter spec",
+    "package": "node_modules/.bin/sls package --stage dev"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.31",
+    "@types/aws-param-store": "^2.1.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.2",
+    "aws-lambda": "^0.1.2",
+    "aws-param-store": "^3.0.0",
+    "babel-loader": "^8.0.6",
+    "serverless": "^1.50.0",
+    "serverless-offline": "^5.10.1",
+    "serverless-plugin-typescript": "^1.1.9",
+    "serverless-webpack": "^5.3.1",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "tsconfig-paths": "^3.8.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-bundle-analyzer": "^3.4.1",
+    "webpack-cli": "^3.3.7",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
